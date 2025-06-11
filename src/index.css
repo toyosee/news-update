@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+button{
+    cursor: pointer;
+}
+
+/* Default header style */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  color: white;
+}
+
+/* Mobile View: Adjust header layout */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .dark-mode-toggle {
+    margin-top: 8px;
+    width: 90%;
+  }
+}
